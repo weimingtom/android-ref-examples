@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/rect" android:title="Rectangle"
+		android:showAsAction="ifRoom|withText" android:icon="@drawable/rectangle" />
+	<item android:id="@+id/circle" android:title="Circle"
+		android:showAsAction="ifRoom" android:icon="@drawable/circle" />
+	<item android:id="@+id/star" android:title="Star"
+		android:icon="@drawable/star" />
+	<item android:id="@+id/triangle" android:title="Triangle"
+		android:showAsAction="ifRoom" android:icon="@drawable/triangle" />
+	<item android:id="@+id/menu_search" android:title="Search"
+		android:icon="@android:drawable/ic_search_category_default"
+		android:showAsAction="ifRoom" android:actionViewClass="android.widget.SearchView" />
+</menu>

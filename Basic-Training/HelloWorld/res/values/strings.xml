@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HelloWorldActivity!</string>
+    <string name="bye">Bye World, Soo Long!</string>
+        
+    <string name="second_activity">Second Activity</string>
+    
+    <string name="click_me">Click Me!</string>
+    <string name="navigate">Navigate</string>
+    <string name="submit">Submit</string>
+    
+    <string name="app_name">HelloWorld</string>
+
+</resources>

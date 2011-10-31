@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/rect"
+        android:icon="@drawable/rectangle"
+        android:showAsAction="ifRoom"
+        android:title="Rect"/>
+
+    <item
+        android:id="@+id/circle"
+        android:icon="@drawable/circle"
+        android:showAsAction="ifRoom"
+        android:title="Circle"/>
+
+    <item 
+        android:id="@+id/star"
+        android:icon="@drawable/star"
+        android:showAsAction="ifRoom"
+        android:title="Star"/>
+
+    <item
+        android:id="@+id/triangle"
+        android:icon="@drawable/triangle"
+        android:title="Triangle"/>
+
+</menu>
