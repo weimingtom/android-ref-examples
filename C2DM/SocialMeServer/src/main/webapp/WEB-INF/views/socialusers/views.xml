@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="socialusers/list">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/list.jspx"/>
+    </definition>
+<definition extends="default" name="socialusers/show">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/show.jspx"/>
+    </definition>
+<definition extends="default" name="socialusers/create">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/create.jspx"/>
+    </definition>
+<definition extends="default" name="socialusers/update">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/update.jspx"/>
+    </definition>
+<definition extends="default" name="socialusers/findSocialUsersByEmailAddressEqualsAndPasswordEquals">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/findSocialUsersByEmailAddressEqualsAndPasswordEquals.jspx"/>
+    </definition>
+<definition extends="default" name="socialusers/findSocialUsersByEmailAddressEquals">
+        <put-attribute name="body" value="/WEB-INF/views/socialusers/findSocialUsersByEmailAddressEquals.jspx"/>
+    </definition>
+</tiles-definitions>

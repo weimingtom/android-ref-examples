@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sparklytix_socialme_model_SocialUserScrapBook" object="${socialuserscrapbook}" path="/socialuserscrapbooks" z="ei8sOzGydSng3qzHvBCQ7lsCAow=">
+        <field:display field="socialUser" id="s_com_sparklytix_socialme_model_SocialUserScrapBook_socialUser" object="${socialuserscrapbook}" z="uVskwH74g0gr9auyajpLV5nJPt0="/>
+        <field:display field="scrap" id="s_com_sparklytix_socialme_model_SocialUserScrapBook_scrap" object="${socialuserscrapbook}" z="9iaxKLRbvIGPgE7A93If4Tz6XPM="/>
+        <field:display date="true" dateTimePattern="${socialUserScrapBook_created_date_format}" field="created" id="s_com_sparklytix_socialme_model_SocialUserScrapBook_created" object="${socialuserscrapbook}" z="rH39aToclwy8zJ7JxLASdicM9RE="/>
+    </page:show>
+</div>

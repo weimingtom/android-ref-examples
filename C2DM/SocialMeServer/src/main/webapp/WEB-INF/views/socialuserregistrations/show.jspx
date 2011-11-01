@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sparklytix_socialme_model_SocialUserRegistration" object="${socialuserregistration}" path="/socialuserregistrations" z="3rf7JfWg5FHgdONXdycwbBrQXo4=">
+        <field:display field="socialUser" id="s_com_sparklytix_socialme_model_SocialUserRegistration_socialUser" object="${socialuserregistration}" z="6l4nKp6An0+YplKkkreZtQ/52PI="/>
+        <field:display field="registrationId" id="s_com_sparklytix_socialme_model_SocialUserRegistration_registrationId" object="${socialuserregistration}" z="WZjR0TTW94XAPKaBVwL89BwurN4="/>
+    </page:show>
+</div>

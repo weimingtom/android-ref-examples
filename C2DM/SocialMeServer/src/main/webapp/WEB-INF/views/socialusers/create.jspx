@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_sparklytix_socialme_model_SocialUser" modelAttribute="socialUser" path="/socialusers" render="${empty dependencies}" z="Dbu6KLX1ZV9g+Z5dQ5h+ltmspJY=">
+        <field:input field="emailAddress" id="c_com_sparklytix_socialme_model_SocialUser_emailAddress" required="true" validationMessageCode="field_invalid_email" z="ObtIAXeMgp6t4E8SiFBlBNt4djI="/>
+        <field:input field="firstName" id="c_com_sparklytix_socialme_model_SocialUser_firstName" required="true" z="9sPR+zmpZ5RaE5NtNHK5a/tBcik="/>
+        <field:input field="lastName" id="c_com_sparklytix_socialme_model_SocialUser_lastName" required="true" z="Bd7g+aIaZIEzJYG3XifH+G+ZR1U="/>
+        <field:input field="password" id="c_com_sparklytix_socialme_model_SocialUser_password" required="true" z="Dl3C/wk6FrldhWBUs7uUZU8y+hg="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_sparklytix_socialme_model_SocialUser" render="${not empty dependencies}" z="yspCF1IF8ZNw+8yErWIQiexr2Yo="/>
+</div>

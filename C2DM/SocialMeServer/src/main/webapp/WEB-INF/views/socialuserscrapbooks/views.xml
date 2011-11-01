@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="socialuserscrapbooks/list">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/list.jspx"/>
+    </definition>
+<definition extends="default" name="socialuserscrapbooks/show">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/show.jspx"/>
+    </definition>
+<definition extends="default" name="socialuserscrapbooks/create">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/create.jspx"/>
+    </definition>
+<definition extends="default" name="socialuserscrapbooks/update">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/update.jspx"/>
+    </definition>
+<definition extends="default" name="socialuserscrapbooks/findSocialUserScrapBooksBySocialUser">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/findSocialUserScrapBooksBySocialUser.jspx"/>
+    </definition>
+<definition extends="default" name="socialuserscrapbooks/findSocialUserScrapBooksBySocialUserAndCreatedGreaterThan">
+        <put-attribute name="body" value="/WEB-INF/views/socialuserscrapbooks/findSocialUserScrapBooksBySocialUserAndCreatedGreaterThan.jspx"/>
+    </definition>
+</tiles-definitions>

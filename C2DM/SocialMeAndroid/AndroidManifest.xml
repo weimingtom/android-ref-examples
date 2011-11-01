@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.sparklytix.factoreal" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	
+	
+	<permission
+		android:name="com.sparklytix.factoreal.permission.C2D_MESSAGE"
+		android:protectionLevel="signature" />
+	<uses-permission
+		android:name="com.sparklytix.factoreal.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".SocialMeActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".LoginActivity" android:label="@string/app_name">
+		</activity>
+		<activity android:name=".SignUpActivity" android:label="@string/app_name">
+		</activity>
+		<receiver android:name=".receivers.C2DMBroadCastReceiver"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<!-- Receive the actual message -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="com.sparklytix.factoreal" />
+			</intent-filter>
+			<!-- Receive the registration id -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="com.sparklytix.factoreal" />
+			</intent-filter>
+
+		</receiver>
+
+	</application>
+</manifest>

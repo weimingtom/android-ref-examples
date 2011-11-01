@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sparklytix_socialme_model_SocialUserScrapBook" items="${socialuserscrapbooks}" z="IFzvUwsLoVmyUTZOqLLCyr3y3rA=">
+        <table:table data="${socialuserscrapbooks}" id="l_com_sparklytix_socialme_model_SocialUserScrapBook" path="/socialuserscrapbooks" z="lB+zWGEUmJuXMEsT6cPZ1WQPDcc=">
+            <table:column id="c_com_sparklytix_socialme_model_SocialUserScrapBook_socialUser" property="socialUser" z="+RfXF1D8drJs4/smQnw4K53xvh0="/>
+            <table:column id="c_com_sparklytix_socialme_model_SocialUserScrapBook_scrap" property="scrap" z="R9QwSwP/pPP6RzQMCZes/Y9Cp6k="/>
+            <table:column date="true" dateTimePattern="${socialUserScrapBook_created_date_format}" id="c_com_sparklytix_socialme_model_SocialUserScrapBook_created" property="created" z="hw5qsKVqElw94giV1WHVJbsf9ME="/>
+        </table:table>
+    </page:list>
+</div>

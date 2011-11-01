@@ -1,0 +1,31 @@
+project --topLevelPackage com.sparklytix.socialme
+
+jpa setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE 
+
+entity --class ~.model.SocialUser --testAutomatically 
+field string --fieldName emailAddress --notNull --unique
+field string --fieldName firstName --notNull
+field string --fieldName lastName --notNull
+field string --fieldName password --notNull
+
+finder add --class ~.model.SocialUser --finderName findSocialUsersByEmailAddressEqualsAndPasswordEquals
+
+entity --class ~.model.SocialUserRegistration --testAutomatically
+field reference --fieldName socialUser --type ~.model.SocialUser --notNull
+field string --fieldName registrationId --notNull
+
+finder add --class ~.model.SocialUserRegistration --finderName findSocialUserRegistrationsBySocialUser
+
+entity --class ~.model.SocialUserScrapBook --testAutomatically 
+field reference --fieldName socialUser --type ~.model.SocialUser --notNull
+field string --fieldName scrap --notNull 
+field date --fieldName created --type java.util.Date --notNull 
+
+finder add --class ~.model.SocialUserScrapBook --finderName findSocialUserScrapBooksBySocialUser
+json all 
+
+web gwt setup
+web gwt all --proxyPackage ~.client.proxy --requestPackage ~.client.request 
+
+
+

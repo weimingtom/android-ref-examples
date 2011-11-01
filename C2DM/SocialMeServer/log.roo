@@ -1,0 +1,40 @@
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log opened at 2011-10-18 12:30:43
+project --topLevelPackage com.sparklytix.socialme
+jpa setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE 
+entity --class ~.model.SocialUser --testAutomatically 
+field string --fieldName emailAddress --notNull --unique
+field string --fieldName firstName --notNull
+field string --fieldName lastName --notNull
+field string --fieldName password --notNull
+finder add --class ~.model.SocialUser --finderName findSocialUsersByEmailAddressEqualsAndPasswordEquals
+entity --class ~.model.SocialUserRegistration --testAutomatically
+field reference --fieldName socialUser --type ~.model.SocialUser --notNull
+field string --fieldName registrationId --notNull
+finder add --class ~.model.SocialUserRegistration --finderName findSocialUserRegistrationsBySocialUser
+entity --class ~.model.SocialUserScrapBook --testAutomatically 
+field reference --fieldName socialUser --type ~.model.SocialUser --notNull
+field string --fieldName scrap --notNull 
+field date --fieldName created --type java.util.Date --notNull 
+finder add --class ~.model.SocialUserScrapBook --finderName findSocialUserScrapBooksBySocialUser
+finder add --class ~.model.SocialUserScrapBook --finderName findSocialUserScrapBooksBySocialUserAndCreatedGreaterThan
+json all 
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc json all
+web mvc controller --class ~.web.UserNotification
+// script --file script.roo
+quit
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log closed at 2011-10-18 12:31:23
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log opened at 2011-10-18 16:08:45
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log closed at 2011-10-18 16:08:57
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log opened at 2011-10-20 00:37:22
+finder list --class ~.model.SocialUser 
+finder add --class ~.model.SocialUser --finderName findSocialUsersByEmailAddressEquals
+quit
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log closed at 2011-10-20 00:38:18
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log opened at 2011-10-20 01:21:01
+finder list --class ~.model.SocialUserRegistration 
+finder add --class ~.model.SocialUserRegistration --finderName findSocialUserRegistrationsByRegistrationIdEquals
+quit
+// Spring Roo 1.2.0.M1 [rev 1fa252f] log closed at 2011-10-20 01:22:02

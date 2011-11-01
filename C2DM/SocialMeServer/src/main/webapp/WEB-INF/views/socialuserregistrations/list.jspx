@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sparklytix_socialme_model_SocialUserRegistration" items="${socialuserregistrations}" z="964ovSbKct/UzkEcclMEa6Gkk7s=">
+        <table:table data="${socialuserregistrations}" id="l_com_sparklytix_socialme_model_SocialUserRegistration" path="/socialuserregistrations" z="8b1l5oWS491OzGgZRrfSdXWshjM=">
+            <table:column id="c_com_sparklytix_socialme_model_SocialUserRegistration_socialUser" property="socialUser" z="X7l6aiVfTFmDzTvLgG70NV3vhUE="/>
+            <table:column id="c_com_sparklytix_socialme_model_SocialUserRegistration_registrationId" property="registrationId" z="//4Ab3Ua/7uH8w4y6zPQvg7vWeI="/>
+        </table:table>
+    </page:list>
+</div>

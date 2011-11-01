@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_socialuser" z="GNJxbLWr6+yakvf5e7xKZXbiIU0=">
+            <menu:item id="i_socialuser_new" messageCode="global_menu_new" url="/socialusers?form" z="M4HycA/KICbZvf/mfq2QYI44fBg="/>
+            <menu:item id="i_socialuser_list" messageCode="global_menu_list" url="/socialusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="x0jwHUIOlTWUoVwqm/+zntT2Plk="/>
+            <menu:item id="fi_socialuser_emailaddressequalsandpasswordequals" messageCode="global_menu_find" url="/socialusers?find=ByEmailAddressEqualsAndPasswordEquals&amp;form" z="ejCTvkfeeJTaqg4mLR0XrXvAK/w="/>
+            <menu:item id="fi_socialuser_emailaddressequals" messageCode="global_menu_find" url="/socialusers?find=ByEmailAddressEquals&amp;form" z="cbI5O8l5nXrHWFjBRksYJzvf5qo="/>
+        </menu:category>
+        <menu:category id="c_socialuserregistration" z="TdTkBeJ9YVb0UM20xqqrGbkn2Vg=">
+            <menu:item id="i_socialuserregistration_new" messageCode="global_menu_new" url="/socialuserregistrations?form" z="m6RfVmg1hDfhbx7nM7V5MKeWX6c="/>
+            <menu:item id="i_socialuserregistration_list" messageCode="global_menu_list" url="/socialuserregistrations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="dCrmoH0lFmZf+GJby6h9c1ya67o="/>
+            <menu:item id="fi_socialuserregistration_socialuser" messageCode="global_menu_find" url="/socialuserregistrations?find=BySocialUser&amp;form" z="m85QcsF7FjB2o8MhZKrw8CF9Q7M="/>
+            <menu:item id="fi_socialuserregistration_registrationidequals" messageCode="global_menu_find" url="/socialuserregistrations?find=ByRegistrationIdEquals&amp;form" z="OROn4YjSaDE3RrBnf1qSzpMAP7w="/>
+        </menu:category>
+        <menu:category id="c_socialuserscrapbook" z="g9rNS5WF0Jhj13jzupyAd/r/1e8=">
+            <menu:item id="i_socialuserscrapbook_new" messageCode="global_menu_new" url="/socialuserscrapbooks?form" z="IbyLHoZCoGtbYR3Z9qUPR8xZDfw="/>
+            <menu:item id="i_socialuserscrapbook_list" messageCode="global_menu_list" url="/socialuserscrapbooks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="U4d/V16l/izGVxCGELH6k0n4yTg="/>
+            <menu:item id="fi_socialuserscrapbook_socialuser" messageCode="global_menu_find" url="/socialuserscrapbooks?find=BySocialUser&amp;form" z="NigVoZf5bbKa1IJbh9WlCENs4Gk="/>
+            <menu:item id="fi_socialuserscrapbook_socialuserandcreatedgreaterthan" messageCode="global_menu_find" url="/socialuserscrapbooks?find=BySocialUserAndCreatedGreaterThan&amp;form" z="rZ/DrtUeEwzGJsfT/vxpZSpIeQk="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__usernotificationindex_id" messageCode="global_generic" url="/usernotification/index" z="llP3GMiO6dRKmdVm7aZ3E3l347k="/>
+        </menu:category>
+    </menu:menu>
+</div>

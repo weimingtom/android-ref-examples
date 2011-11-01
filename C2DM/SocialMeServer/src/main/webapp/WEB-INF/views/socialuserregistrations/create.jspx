@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_sparklytix_socialme_model_SocialUserRegistration" modelAttribute="socialUserRegistration" path="/socialuserregistrations" render="${empty dependencies}" z="FvyJfsGimiPq7OBycFMniE32/bI=">
+        <field:select field="socialUser" id="c_com_sparklytix_socialme_model_SocialUserRegistration_socialUser" itemValue="id" items="${socialusers}" path="/socialusers" required="true" z="D/67cgJAkg/mxfAGHKM2vZ2Ctao="/>
+        <field:input field="registrationId" id="c_com_sparklytix_socialme_model_SocialUserRegistration_registrationId" required="true" z="v91eMvu6KZpLBuQ3SpdwjDiM7iM="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_sparklytix_socialme_model_SocialUserRegistration" render="${not empty dependencies}" z="gqm8PIOd2FqbVhmtRABHZLXZJ0M="/>
+</div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByRegistrationIdEquals" id="ff_com_sparklytix_socialme_model_SocialUserRegistration" path="/socialuserregistrations" z="uMN4g58XTRObz8uC0vuJ55uRozQ=">
+        <field:input disableFormBinding="true" field="registrationId" id="f_com_sparklytix_socialme_model_SocialUserRegistration_registrationId" required="true" z="9b1ApCRPRXBwHSdYXGJFy/eFaYg="/>
+    </form:find>
+</div>
