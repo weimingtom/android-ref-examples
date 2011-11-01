@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/login_to_twitter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="Login to Twitter"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OAuth Tokens" 
+        android:background="#FFFF00"
+        android:textColor="#000000"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/token"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="....." />
+
+    <TextView
+        android:id="@+id/tokensecret"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="...." />
+
+</LinearLayout>
