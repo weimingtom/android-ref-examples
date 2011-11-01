@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ServiceExample!</string>
+    <string name="app_name">ServiceExample</string>
+    
+    <string name="simple_service">Simple Service Example</string>
+    <string name="bind_service_simple">Binding to Service (Primitives)</string>
+    <string name="bind_service_complex">Binding to Service (Complex Types)</string>
+    
+</resources>
